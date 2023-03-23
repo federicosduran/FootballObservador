@@ -1,4 +1,4 @@
-public class Referee extends IObserver{
+public class Referee implements ObservadorI {
     private Position ballPosition;
     private Football ball;
     private String number;

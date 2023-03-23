@@ -1,25 +1,25 @@
 import java.util.ArrayList;
 
 public class Ball {
-    private ArrayList<IObserver> observers;
+    private ArrayList<ObservadorI> observers;
 
     public Ball() {
         observers= new ArrayList<>();
     }
 
-    public void attachObserver(IObserver obj)
+    public void attachObserver(ObservadorI obj)
     {
         observers.add(obj);
     }
 
-    public void detachObserver(IObserver obj)
+    public void detachObserver(ObservadorI obj)
     {
         observers.remove(obj);
     }
 
     public void notifyObservers()
     {
-        for (IObserver obs: observers)
+        for (ObservadorI obs: observers)
         {
             obs.update();
         }

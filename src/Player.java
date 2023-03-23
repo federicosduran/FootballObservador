@@ -1,4 +1,4 @@
-public class Player extends IObserver{
+public class Player implements ObservadorI{
     private Position ballPosition;
     private Football ball;
     private String number;
